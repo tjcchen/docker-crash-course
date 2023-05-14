@@ -31,6 +31,12 @@ docker-compose down --rmi all
   - Start quickly
   - Need less hardware resources
 
+## Dockerfile and Images
+
+Dockerfile is a plain text file that includes instructions that dockers uses to package this application into an image.
+
+This image contains everything our application needs to run everything, including a cut-down OS, a runtime environment( eg Node ), application files, 3rd-party libraries, environment variables.
+
 
 ## License
 Apache 2.0
