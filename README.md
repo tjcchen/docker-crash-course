@@ -14,6 +14,15 @@ docker-compose up
 
 # remove an application and all its dependencies safely
 docker-compose down --rmi all
+
+# build an image with Dockerfile
+docker build -t hello-docker .
+
+# check docker images
+docker images or docker image ls
+
+# run your docker image
+docker run hello-docker
 ```
 
 ## Virtual Machines vs Containers
@@ -37,6 +46,9 @@ Dockerfile is a plain text file that includes instructions that dockers uses to 
 
 This image contains everything our application needs to run everything, including a cut-down OS, a runtime environment( eg Node ), application files, 3rd-party libraries, environment variables.
 
+## Links
+
+Docker Hub( Registry ): https://hub.docker.com/
 
 ## License
 Apache 2.0
