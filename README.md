@@ -16,5 +16,21 @@ docker-compose up
 docker-compose down --rmi all
 ```
 
+## Virtual Machines vs Containers
+- Virtual Machine is an abstraction of a machine( physical hardware ).
+  - Hypervisors - create and manage virtual machines. Eg: VirtualBox, VMware.
+  - Benefits - run applications in isolation
+  - Problems
+    - Each VM needs a full-blown OS
+    - Slow to start
+    - Resource intensive( cpu, memory, disk space )
+- Container is an isolated environment for running an appliction.
+  - Allow running multiple apps in isolation
+  - Are lightweight
+  - Use OS of the host
+  - Start quickly
+  - Need less hardware resources
+
+
 ## License
 Apache 2.0
