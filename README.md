@@ -23,6 +23,15 @@ docker images or docker image ls
 
 # run your docker image
 docker run hello-docker
+
+# rename your local image for remote Docker Hub
+docker tag hello-docker tjcchen/hello-docker
+
+# push local image to Docker Hub
+docker push tjcchen/hello-docker
+
+# pull a docker image from Docker Hub( on another machine )
+docker pull tjcchen/hello-docker
 ```
 
 ## Virtual Machines vs Containers
@@ -49,6 +58,8 @@ This image contains everything our application needs to run everything, includin
 ## Links
 
 Docker Hub( Registry ): https://hub.docker.com/
+
+Play with Docker: https://labs.play-with-docker.com/
 
 ## License
 Apache 2.0
