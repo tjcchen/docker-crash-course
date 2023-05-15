@@ -7,8 +7,8 @@ Docker is a platform for building, running, and shipping applications with ease.
 2. Software version mismatch( Eg: node version 14 in your dev, and version 9 in your prod )
 3. Different configuration settings( Eg: inconsistency between environment variables )
 
-## Commands
-```
+## Commonly-used Commands
+```bash
 # other team members could run your docker container with ease
 docker-compose up
 
@@ -38,6 +38,43 @@ docker image ls
 
 # run docker image from another machine
 docker run tjcchen/hello-docker
+```
+
+## Running Linux
+```bash
+# pull an ubuntu image
+docker pull ubuntu
+or
+docker run unbuntu
+
+# check docker container status( currently running )
+docker ps
+
+# check docker all container status( including closed )
+docker ps -a
+
+# run docker in an interactive way( interactive )
+docker run -it ubuntu
+
+# check which bash
+echo $0
+
+# show history & execute commands by number
+history ; !<history number>, eg: !2
+
+# apt -> advanced package tool( package management )
+
+# check current OS package
+apt list
+
+# fetch and update apt packages
+apt update
+
+# install a nano package( GNU nano is a simple terminal-based text editor )
+apt install nano
+
+# remove the nano package
+apt remove nano
 ```
 
 ## Virtual Machines vs Containers
