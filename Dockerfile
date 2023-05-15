@@ -7,5 +7,5 @@ COPY . /app
 # working dir is /app
 WORKDIR /app
 
-# execute this command: node app.js
+# execute command: node app.js
 CMD [ "node", "app.js" ]

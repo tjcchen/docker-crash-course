@@ -32,6 +32,12 @@ docker push tjcchen/hello-docker
 
 # pull a docker image from Docker Hub( on another machine )
 docker pull tjcchen/hello-docker
+
+# check docker image from another machine
+docker image ls
+
+# run docker image from another machine
+docker run tjcchen/hello-docker
 ```
 
 ## Virtual Machines vs Containers
