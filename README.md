@@ -38,6 +38,9 @@ docker image ls
 
 # run docker image from another machine
 docker run tjcchen/hello-docker
+
+# enter into a docker image in an interactive way( 303ca2247317 is a running container id )
+docker exec -it 303ca2247317 sh
 ```
 
 ## Running Linux
@@ -109,7 +112,7 @@ tail -n 5 /etc/adduser.conf # show last 5 lines of a file
 cat file1.txt file2.txt > combined.txt
 
 # append a new of text to a file
-echo a bottom line of text >> combined.txt
+echo "a bottom line of text" >> combined.txt
 ```
 
 ## Virtual Machines vs Containers
