@@ -77,6 +77,41 @@ apt install nano
 apt remove nano
 ```
 
+# Linus File Systems
+```bash
+# everything on linux is a file
+
+# standard directories
+bin  # binaries or programs
+boot # files related to booting
+dev  # devices
+etc  # editable text configuration( configuration files )
+home # each user will have a home directory
+root # home directory for the root user, only root user can access
+lib  # libriaries, like software library dependencies
+var  # variables; files updated frequently, like log files, application data etc
+proc # running processes
+
+# enter the root directory, tilde
+cd ~
+
+# rename
+mv test docker
+
+# check file content
+cat hello-docker.txt
+more /etc/adduser.conf
+less /etc/adduser.conf
+head -n 5 /etc/adduser.conf # show first 5 lines of a file
+tail -n 5 /etc/adduser.conf # show last 5 lines of a file
+
+# redirect
+cat file1.txt file2.txt > combined.txt
+
+# append a new of text to a file
+echo a bottom line of text >> combined.txt
+```
+
 ## Virtual Machines vs Containers
 - Virtual Machine is an abstraction of a machine( physical hardware ).
   - Hypervisors - create and manage virtual machines. Eg: VirtualBox, VMware.
