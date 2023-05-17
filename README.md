@@ -145,6 +145,49 @@ grep -i hello file*
 grep -i -r hello .
 grep -ir hello .
 
+# find: finding files and directories
+
+# find directories
+find -type d
+
+# find files
+find -type f
+
+# find files start with letter f
+Case Sensitive: find -type f -name "f*"
+Case Insensitive: find -type f -iname "f*"
+
+# find files end with extention .txt
+find -type f -name "*.txt"
+
+# find python file starts from root directory
+find / -type f -name "*.py"
+
+# find docker directory starts from root directory
+find / -type d -name docker
+
+# find python file starts from root directory, and write to a file
+find / -type f -name "*.py" > python-files.txt
+
+# multiple commands together( when first command failed, the second command will be executed continuously )
+mkdir test ; cd test ; echo done
+
+# multiple commands together( when first command failed, the second command will not executed )
+mkdir test && cd test && echo done
+
+# multiple commands together( when first command failed, the second command will be exectued. However, if first command succeeded, the second command will not be executed )
+mkdir test || echo "directory exists"
+
+# piping |
+
+# check /bin binaries with piping
+ls /bin | less
+ls /bin | head -n 5
+
+# multiple lines of commands( with backslash )
+mkdir hello;\
+cd hello;\
+echo done
 ```
 
 ## Virtual Machines vs Containers
