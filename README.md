@@ -43,6 +43,18 @@ docker run tjcchen/hello-docker
 
 # enter into a docker container in an interactive way( 303ca2247317 is a running container id )
 docker exec -it 303ca2247317 sh
+
+# check running containers
+docker ps
+
+# start a nginx server locally( http://localhost:8000/ )
+docker run -it -p 8000:80 nginx
+
+# remove an exited container
+docker rm <containerid>; eg: docker ps -a; docker rm 2ac2274a4e24
+
+# remove an docker image
+docker image rm <imageid>; eg: docker image rm ee4764920885
 ```
 
 ## Running Linux
