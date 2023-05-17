@@ -51,10 +51,18 @@ docker ps
 docker run -it -p 8000:80 nginx
 
 # remove an exited container
-docker rm <containerid>; eg: docker ps -a; docker rm 2ac2274a4e24
+docker rm <containerid>
+docker ps -a
+docker rm 2ac2274a4e24
 
 # remove an docker image
-docker image rm <imageid>; eg: docker image rm ee4764920885
+docker image rm <imageid>
+docker image rm ee4764920885
+
+# docker start a closed container( interactive )
+docker ps -a
+docker start -i <containerid>
+docker start -i 06e3ee927de3
 ```
 
 ## Running Linux
@@ -188,6 +196,38 @@ ls /bin | head -n 5
 mkdir hello;\
 cd hello;\
 echo done
+```
+
+## Linus Commands
+```bash
+# print all environment variables
+printenv
+
+# show value of environment variable
+printenv PATH
+echo $PATH
+
+# set environment variable( in current session )
+export DB_USER=tjcchen
+
+# check DB_USER
+print DB_USER
+echo $DB_USER
+
+# set environment variable persistently( write a variable to root .bashrc file )
+echo DB_USER=tjcchen >> .bashrc
+
+# linux: .bashrc
+# mac: .bash_profile
+
+# mac
+export THEME_COLOR=white
+
+# make .bashrc file take effect immediately
+source .bashrc
+
+# check DB_USER in another session( works )
+echo $DB_USER
 ```
 
 ## Virtual Machines vs Containers
