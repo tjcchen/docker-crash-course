@@ -127,6 +127,24 @@ cat file1.txt file2.txt > combined.txt
 
 # append a new line of text to a file
 echo "a bottom line of text" >> combined.txt
+
+# PWD: Print Working Directory
+
+# create & edit a file with nano
+nano file1.txt
+
+# grep: global regular expression print
+
+# find root in /etc/passwd with grep
+grep -i root /etc/passwd
+
+# find text in multiple files
+grep -i hello file*
+
+# search text in a directory( -r means recursively )
+grep -i -r hello .
+grep -ir hello .
+
 ```
 
 ## Virtual Machines vs Containers
