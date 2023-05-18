@@ -266,6 +266,23 @@ docker exec -it -u tjcchen 5aa032410e6c bash
 
 # add a user with adduser( it uses useradd under the hood )
 adduser john
+
+# manage groups
+
+# add a group
+groupadd developers
+
+# check groups
+cat /etc/group
+
+# add john to developers group
+usermod -G developers john
+
+# check john
+cat /etc/passwd | grep -i john
+
+# check john groups( john : john developers )
+groups john
 ```
 
 ## Virtual Machines vs Containers
