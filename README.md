@@ -228,6 +228,44 @@ source .bashrc
 
 # check DB_USER in another session( works )
 echo $DB_USER
+
+# manage processes
+# ps
+
+# check process
+ps
+
+# sleep 3 seconds
+foreground: sleep 3
+background: sleep 100 &
+
+# kill a process
+kill pid
+kill 38
+
+# manage users
+useradd # add a new user
+userdel # delete a user
+usermod # modify a user
+
+# add a new user
+useradd -m tjcchen
+
+# check the added user
+cat /etc/passwd
+
+# modify the user's bash
+usermod -s /bin/bash tjcchen
+cat /etc/passwd
+
+# check user's password, only accessible to root user( result is tjcchen:!:19495:0:99999:7::: )
+cat /etc/shadow
+
+# login to docker container as a normal user
+docker exec -it -u tjcchen 5aa032410e6c bash
+
+# add a user with adduser( it uses useradd under the hood )
+adduser john
 ```
 
 ## Virtual Machines vs Containers
