@@ -102,7 +102,7 @@ apt install nano
 apt remove nano
 ```
 
-# Linus File Systems
+# Linux File Systems
 ```bash
 # everything on linux is a file
 
@@ -198,7 +198,7 @@ cd hello;\
 echo done
 ```
 
-## Linus Commands
+## Linux Commands
 ```bash
 # print all environment variables
 printenv
