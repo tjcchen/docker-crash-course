@@ -283,6 +283,23 @@ cat /etc/passwd | grep -i john
 
 # check john groups( john : john developers )
 groups john
+
+# change permissions
+chmod u # user
+chmod g # group
+chmod o # others
+
+# execute a shell file
+./deploy.sh
+
+# add execution permission to a user 
+chmod u+x deploy.sh
+
+# add execution permission to others( any user can execute this shell file )
+chmod o+x deploy.sh
+
+# change multiple permissions
+chmod og+x+w-r file1.txt deploy.sh *.sh
 ```
 
 ## Virtual Machines vs Containers
